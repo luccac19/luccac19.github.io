@@ -11,23 +11,18 @@
 }
 
 .headshot-container {
-    text-align: center;       /* centers the image horizontally */
-    margin: 20px 0;           /* vertical spacing above and below */
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 }
 
-/* Headshot image styling */
 .headshot {
-    width: 150px;             /* fixed width */
-    height: auto;             /* maintains aspect ratio */
-    border-radius: 5px;       /* slightly rounded corners (0 for sharp) */
-    display: inline-block;    
-    object-fit: cover;        /* ensures image fills the rectangle nicely */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional subtle shadow */
-    transition: transform 0.3s; /* optional hover effect */
-}
-
-.headshot:hover {
-    transform: scale(1.05);   /* optional hover zoom effect */
+    width: 60vw;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
 }
 
 body {
