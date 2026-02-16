@@ -184,15 +184,26 @@ footer {
   content: "";
   margin: 0;
 }
-.publication .description {
+/* Awards container */
+.publication .awards {
   margin-top: 0.75rem;
-  padding: 0.75rem 1rem;
-  background: rgba(148, 163, 184, 0.08); /* subtle highlight */
-  border-left: 3px solid var(--accent, #6366f1); /* accent line */
-  border-radius: 8px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--text);
+}
+
+/* Individual award */
+.publication .award {
+  display: block;              /* forces new line */
+  margin-bottom: 0.4rem;       /* spacing between awards */
+  padding: 0.5rem 0.75rem;
+  background: rgba(250, 204, 21, 0.12); 
+  border-left: 3px solid #facc15; 
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Remove spacing from last award */
+.publication .award:last-child {
+  margin-bottom: 0;
 }
 
 /* Responsive */
